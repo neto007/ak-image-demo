@@ -4,6 +4,7 @@
 FROM alpine:3.18.0
 
 RUN apk add --no-cache curl ca-certificates
+RUN apk add --no-cache libssl3=3.1.4-r6
 
 COPY app.sh /app/app.sh
 USER 1000
