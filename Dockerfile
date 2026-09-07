@@ -3,7 +3,7 @@
 # afetados por CVE-2024-6119 (fix em 3.1.7-r0), entre outras.
 FROM alpine:3.18.0
 
-RUN apk add --no-cache curl ca-certificates
+RUN apk add --no-cache curl ca-certificates libcrypto3=3.1.4-r6
 
 COPY app.sh /app/app.sh
 USER 1000
