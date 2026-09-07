@@ -1,7 +1,7 @@
 # Imagem de demonstração para a remediação autônoma de containers.
 # Base antiga de propósito: alpine 3.18.0 traz openssl/libcrypto3 3.1.0-r4,
 # afetados por CVE-2024-6119 (fix em 3.1.7-r0), entre outras.
-FROM alpine:3.18.12
+FROM alpine:3.18.7
 
 RUN apk add --no-cache curl ca-certificates
 
