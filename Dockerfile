@@ -5,6 +5,8 @@ FROM alpine:3.18.0
 
 RUN apk add --no-cache curl ca-certificates
 
+RUN apk add --no-cache libcrypto3=3.1.6-r0
+
 COPY app.sh /app/app.sh
 USER 1000
 CMD ["/app/app.sh"]
